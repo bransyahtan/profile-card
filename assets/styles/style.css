@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 230, 234);
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    font-weight: bold;
+}
+
+.navbar-left {
+    flex: 70%;
+}
+
+.navbar-right {
+    flex: 30%;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.navbar-right a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.card {
+    display: flex;
+    background-color: #F7F7F7;
+    width: 1000px;
+    height: 700px;
+    border: 1px ;
+    margin: 90px auto; 
+    padding: 10px 20px 10px 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #cecece; 
+    text-align: justify; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+.download {
+    margin-left: 10px;
+}
+
+.button2 {
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(17, 23, 39);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.socialMedia a {
+    margin: 30px 10px;
+}
+
+.inner-card{
+    background-color: #F7F7F7;
+    width: 300px;
+    height: fit-content;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #cecece;
+    text-align: center;
+}
+
+.inner-card img {
+    width: 300px;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} 

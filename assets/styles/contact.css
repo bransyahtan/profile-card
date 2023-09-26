@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 230, 234);
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.navbar-left {
+    flex: 70%;
+}
+
+.navbar-right {
+    flex: 30%;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.navbar-right a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+form div {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    resize: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    background-color: black;
+}
