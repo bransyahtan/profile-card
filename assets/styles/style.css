@@ -74,22 +74,23 @@ nav ul li .active {
     margin-left: 10px;
 }
 
+.tombol-klik {
+    margin-top: 50px;
+}
+
 .button2 {
     padding: 5px 10px;
     color: white;
     background-color: rgb(17, 23, 39);
     border-radius: 20px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
-.socialMedia{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.socialMedia a {
-    margin: 30px 10px;
+.social-media i {
+    margin-right: 20px;
+    margin-top: 30px;
+    font-size: 30px;
 }
 
 .inner-card{
@@ -104,7 +105,6 @@ nav ul li .active {
 
 .inner-card img {
     width: 300px;
-    max-width: 400px;
     height: auto;
     margin-bottom: 10px;
     border-radius: 10px;
