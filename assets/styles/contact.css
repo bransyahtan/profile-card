@@ -37,6 +37,13 @@ nav ul li {
     flex: 70%;
 }
 
+.navbar-left ul li a:hover  {
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    padding: 8px 12px;
+}
+
 .navbar-right {
     flex: 30%;
     text-align: end;

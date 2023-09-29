@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 230, 234);
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    font-weight: bold;
+}
+
+.navbar-left {
+    flex: 70%;
+}
+
+.navbar-right {
+    flex: 30%;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.navbar-right a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.navbar-left ul li a:hover  {
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    padding: 8px 12px;
+}
+
+.project-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-form .project-form-container {
+    width: 800px;
+}
+
+.project-form .project-form-container h1 {
+    text-align: center;
+    margin-bottom: 30px ;
+}
+
+.project-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.project-form form input, select, textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    resize: none;
+}
+
+.project-form form .input-project-date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-form form .input-project-date .date-start {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.project-form form .input-project-date .date-end {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* .input-project-technology .technology-list {
+    display: flex;
+    width: 60%;
+    align-items: start;
+}
+
+.input-project-technology .technology-list .tech-right {
+    flex: 50%;
+    display: flex;
+    align-items: start;
+}
+
+.input-project-technology .technology-list .tech-left {
+    flex: 50%;
+    display: flex;
+    align-items: start;
+}
+
+.input-project-technology .technology-list .tech-left .tech {
+    display: flex;
+}
+
+.input-project-technology .technology-list .tech-right .tech {
+    display: flex;
+} */
+
+.project-form form .input-project-image-group{
+    background-color: white;
+    border-radius: 12px;
+    height: 50px;
+}
+  
+.project-form form .input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-form form .input-project-image-group label p {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.project-form form .input-project-image-group img {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}

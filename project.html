@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Project</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/styles/project.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-left">
+        <ul>
+          <li><img src="./assets/images/logo.png" alt="logo" /></li>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="#" class="active"> My Project </a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+    <div class="projcet">
+      <div class="project-form">
+        <div class="project-form-container">
+          <form>
+            <h1>Add My Project</h1>
+            <div>
+              <label for="input-project-tittle"> Project Name </label>
+              <input
+                type="text"
+                id="input-project-tittle"
+                placeholder="Enter Your Project Tittle"
+              />
+            </div>
+            <div class="input-project-date">
+              <div class="date-start">
+                <label for="input-project-start"> Start Date </label>
+                <input type="date" id="input-project-start" />
+              </div>
+              <div class="date-end">
+                <label for="input-project-end"> End Date </label>
+                <input type="date" id="input-project-end" />
+              </div>
+            </div>
+            <div>
+              <label for="input-project-duration">
+                Insert Your Project Duration</label
+              >
+              <input
+                type="text"
+                id="input-project-duration"
+                placeholder="ex: 1 Year 4 Months"
+              />
+            </div>
+            <div>
+              <label for="input-project-desciption">Description</label>
+              <textarea
+                type="text"
+                id="input-project-desciption"
+                placeholder="Enter Your Project Description"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="input-project-technology">
+              <div><p>Technology</p></div>
+              <div class="technology-list">
+                <div class="tech-left">
+                  <div class="tech">
+                    <input type="checkbox" id="input-project-node" />
+                    <label for="input-project-node">Node JS</label>
+                  </div>
+                  <div class="tech">
+                    <input type="checkbox" id="input-project-react" />
+                    <label for="input-project-react">React JS</label>
+                  </div>
+                </div>
+                <div class="tech-right">
+                  <div class="tech">
+                    <input type="checkbox" id="input-project-next" />
+                    <label for="input-project-next">Next JS</label>
+                  </div>
+                  <div class="tech">
+                    <input type="checkbox" id="input-project-typescript" />
+                    <label for="input-project-typescript">TypeScript</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-project-image-group">
+                <label for="input-project-image">
+                  <p>Choose</p>
+                  <img src="./assets/images/upload.jpeg" />
+                </label>
+                <input type="file" id="input-project-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div id="content" class="project-list">
+        <div class="project-list-item">
+          <div class="project-image">
+            <img src="./assets/images/techno.jpg" alt="Deus Ex Machina" />
+          </div>
+          <h1>
+            <a href="blog-detail.html">Deus Ex Machina Prototype</a>
+          </h1>
+          <div class="project-duration">Durasi: 1 Tahun 11 Bulan</div>
+          <p>
+            Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
+            pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama
+            15 tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah
+            mesin yang dapat meniru kemampuan otak manusia dalam memproses
+            informasi dan pengambilan keputusan. Mesin ini diharapkan dapat
+            digunakan untuk mempercepat penemuan dan inovasi yang akan membantu
+            memecahkan berbagai masalah kompleks di dunia. Meskipun masih dalam
+            tahap prototipe, Deus Ex Machina menjadi tonggak penting bagi
+            perkembangan teknologi di masa depan.
+          </p>
+          <div class="social-media">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+          <div class="button">
+            <button class="button-edit">Edit</button>
+            <button class="button-delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

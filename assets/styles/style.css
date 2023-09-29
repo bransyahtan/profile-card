@@ -54,6 +54,13 @@ nav ul li .active {
     padding: 7px;
 }
 
+.navbar-left ul li a:hover  {
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    padding: 8px 12px;
+}
+
 .card {
     display: flex;
     background-color: #F7F7F7;
