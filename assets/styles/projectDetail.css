@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 230, 234);
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    font-weight: bold;
+}
+
+.navbar-left {
+    flex: 70%;
+}
+
+.navbar-right {
+    flex: 30%;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.navbar-right a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.navbar-left ul li a:hover  {
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    padding: 8px 12px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    width: 1000px auto;
+  }
+  
+  .project-container .project-title h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project-detail {
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  .project-image {
+    justify-content: flex-start;
+  }
+  
+  .project-image img {
+    width: 650px;
+  }
+  
+  .project-detail-info {
+    width: 500px;
+    margin-left: 110px;
+  }
+  
+  
+  .project-description {
+    margin-top: 60px;
+  }
+  
+  .project-description p {
+    text-align: justify;
+  }
+  
+  .technology {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  
+  .technology .left-tech div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .technology .right-tech div {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }

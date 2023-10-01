@@ -30,122 +30,118 @@
         <a href="contact.html"> Contact Me </a>
       </div>
     </nav>
-    <div class="projcet">
+    <div class="project">
       <div class="project-form">
         <div class="project-form-container">
-          <form>
-            <h1>Add My Project</h1>
-            <div>
-              <label for="input-project-tittle"> Project Name </label>
-              <input
-                type="text"
-                id="input-project-tittle"
-                placeholder="Enter Your Project Tittle"
-              />
-            </div>
-            <div class="input-project-date">
-              <div class="date-start">
-                <label for="input-project-start"> Start Date </label>
-                <input type="date" id="input-project-start" />
-              </div>
-              <div class="date-end">
-                <label for="input-project-end"> End Date </label>
-                <input type="date" id="input-project-end" />
-              </div>
-            </div>
-            <div>
-              <label for="input-project-duration">
-                Insert Your Project Duration</label
-              >
-              <input
-                type="text"
-                id="input-project-duration"
-                placeholder="ex: 1 Year 4 Months"
-              />
-            </div>
-            <div>
-              <label for="input-project-desciption">Description</label>
-              <textarea
-                type="text"
-                id="input-project-desciption"
-                placeholder="Enter Your Project Description"
-                rows="5"
-              ></textarea>
-            </div>
-            <div class="input-project-technology">
-              <div><p>Technology</p></div>
-              <div class="technology-list">
-                <div class="tech-left">
-                  <div class="tech">
-                    <input type="checkbox" id="input-project-node" />
-                    <label for="input-project-node">Node JS</label>
-                  </div>
-                  <div class="tech">
-                    <input type="checkbox" id="input-project-react" />
-                    <label for="input-project-react">React JS</label>
-                  </div>
+            <form onsubmit="addProject(event)">
+                <h1>Add My Project</h1>
+                <div class="input-project-name">
+                    <label for="input-project-name"> Project Name </label>
+                    <input
+                        type="text"
+                        id="input-project-name"
+                        placeholder="Enter Your Project name"
+                    />
                 </div>
-                <div class="tech-right">
-                  <div class="tech">
-                    <input type="checkbox" id="input-project-next" />
-                    <label for="input-project-next">Next JS</label>
-                  </div>
-                  <div class="tech">
-                    <input type="checkbox" id="input-project-typescript" />
-                    <label for="input-project-typescript">TypeScript</label>
-                  </div>
+                <div class="project-date">
+                    <div class="date-start">
+                        <label for="input-project-start"> Start Date </label>
+                        <input type="date" id="input-project-start" />
+                    </div>
+                    <div class="date-end">
+                        <label for="input-project-end"> End Date </label>
+                        <input type="date" id="input-project-end" />
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div>
-              <label>Upload Image</label>
-              <div class="input-project-image-group">
-                <label for="input-project-image">
-                  <p>Choose</p>
-                  <img src="./assets/images/upload.jpeg" />
-                </label>
-                <input type="file" id="input-project-image" hidden />
-              </div>
-            </div>
-            <div class="button-group">
-              <button>Submit</button>
-            </div>
-          </form>
+                <div class="project-duration">
+                    <label for="input-project-duration">
+                        Insert Your Project Duration</label
+                    >
+                    <input
+                        type="text"
+                        id="input-project-duration"
+                        placeholder="ex: 1 Year 4 Months"
+                    />
+                </div>
+                <div>
+                    <label for="input-project-desciption">Description</label>
+                    <textarea
+                        type="text"
+                        id="input-project-desciption"
+                        placeholder="Enter Your Project Description"
+                        rows="5"
+                    ></textarea>
+                </div>
+                <div class="nametag">Technology</div>
+                <div class="input-project-technology">
+                    <div class="tech-left">
+                        <label for="input-project-android">
+                            <input type="checkbox" id="input-project-android" class="checkbox"/>
+                            Android</label>
+                        <label for="input-project-react"><input type="checkbox" id="input-project-react" class="checkbox"/>
+                            React JS</label>
+                    </div>
+                    <div class="tech-right">
+                        <label for="input-project-wired"><input type="checkbox" id="input-project-wired" class="checkbox"/>
+                            Wired Network</label>
+                        <label for="input-project-microchip"><input type="checkbox" id="input-project-microchip" class="checkbox"/>
+                            TypeScript</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="nametag">Upload Image</div>
+                    <div class="input-project-image-group">
+                        <label for="input-project-image">
+                            <p>Choose</p>
+                            <img src="./assets/images/upload.jpeg" />
+                        </label>
+                        <input type="file" id="input-project-image" hidden />
+                    </div>
+                </div>
+                <div class="button-submit">
+                    <button>Submit</button>
+                </div>
+            </form>
         </div>
-      </div>
-      <hr />
-      <div id="content" class="project-list">
-        <div class="project-list-item">
-          <div class="project-image">
-            <img src="./assets/images/techno.jpg" alt="Deus Ex Machina" />
-          </div>
-          <h1>
-            <a href="blog-detail.html">Deus Ex Machina Prototype</a>
-          </h1>
-          <div class="project-duration">Durasi: 1 Tahun 11 Bulan</div>
-          <p>
-            Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
-            pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama
-            15 tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah
-            mesin yang dapat meniru kemampuan otak manusia dalam memproses
-            informasi dan pengambilan keputusan. Mesin ini diharapkan dapat
-            digunakan untuk mempercepat penemuan dan inovasi yang akan membantu
-            memecahkan berbagai masalah kompleks di dunia. Meskipun masih dalam
-            tahap prototipe, Deus Ex Machina menjadi tonggak penting bagi
-            perkembangan teknologi di masa depan.
-          </p>
-          <div class="social-media">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-          </div>
-          <div class="button">
-            <button class="button-edit">Edit</button>
-            <button class="button-delete">Delete</button>
-          </div>
-        </div>
-      </div>
     </div>
+    
+    <hr class="line-batas" />
+    
+    <div id="content" class="project-list">
+            <div class="project-list-item">
+              <div class="project-image">
+                <img src="./assets/images/techno.jpg" alt="Deus Ex Machina" />
+              </div>
+              <h1>
+                <a href="project-detail.html">Deus Ex Machina Prototype</a>
+              </h1>
+              <div class="project-duration">Durasi: 1 Tahun 11 Bulan</div>
+              <p>
+                Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
+                pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama
+                15 tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah
+                mesin yang dapat meniru kemampuan otak manusia dalam memproses
+                informasi dan pengambilan keputusan. Mesin ini diharapkan dapat
+                digunakan untuk mempercepat penemuan dan inovasi yang akan membantu
+                memecahkan berbagai masalah kompleks di dunia. Meskipun masih dalam
+                tahap prototipe, Deus Ex Machina menjadi tonggak penting bagi
+                perkembangan teknologi di masa depan.
+              </p>
+              <div class="tag-tech">
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fab fa-react"></i></i>
+                <i class="fa-solid fa-network-wired"></i>
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="button">
+                <button class="button-edit">Edit</button>
+                <button class="button-delete">Delete</button>
+              </div>
+            </div>
+          </div>
+    
+      
+    </div>
+    <script src="./script/project.js"></script>
   </body>
 </html>

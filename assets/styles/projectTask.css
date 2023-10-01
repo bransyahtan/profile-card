@@ -208,55 +208,72 @@ nav ul li .active {
     padding: 5px 20px;
 }
 
-.project-list { 
+.content {
+    background-color: #f8f8f8;
+  }
+  
+  .row-project {
+    border-radius: 8px;
+  }
+  
+  .tampung-col {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
     justify-content: left;
     margin: 0px 54px;
-}
-
-.project-list .project-list-item {
-    width: 30%;
-    padding: 15px;
-    margin: 20px;
-    border: 2px solid #dbdbdb;
+  }
+  
+  .row-project .col-project {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px grey;
+    width: 350px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .row-project .col-project .img-control {
+    margin-top: 18px;
+    width: 320px;
+    max-height: 233px;
+    overflow: hidden;
+  }
+  
+  .row-project .col-project img {
     border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 0 15px #cecece;
-    
-}
-
-.project-list .project-list-item .project-image img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.project-list .project-list-item a {
-    font-size: 25px;
-}
-
-.project-list .project-list-item a:hover{
-    color: purple;
-}
-
-.project-list .project-list-item p{
-    text-align: justify;
-}
-
-.project-list .project-list-item .tag-tech {
-    font-size: 1.5rem;
-}
-
-.button {
-    float: right;
-}
-
-.button .button-edit, .button-delete {
+  }
+  
+  .row-project .col-project i {
+    margin-right: 22px;
+  }
+  
+  .row-project .col-project .button {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .row-project .col-project .button button {
     background-color: black;
+    border-radius: 8px;
     color: white;
-    border-radius: 100px;
-    padding: 3px 10px;
-} 
+    cursor: pointer;
+  }
+  
+  .row-project .col-project .button button:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .content .container .text-center h1 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+  .row-project .col-project .description {
+    max-height: 60px;
+    overflow: hidden;
+    color: black !important;
+  }
