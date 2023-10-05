@@ -18,7 +18,6 @@ nav {
     align-items: center;
     height: 9vh;
     width: 100vw;
-    margin-top: 5px;
 }
 
 nav ul {
@@ -61,202 +60,250 @@ nav ul li .active {
     padding: 8px 12px;
 }
 
-.project-form {
-    padding: 50px 0;
-    display: flex;
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     justify-content: center;
-}
-
-.project-form .project-form-container {
+  }
+  
+  
+  .form-content {
     width: 800px;
-}
-
-.project-form .project-form-container h1 {
+    margin: auto;
+  }
+  
+  .form-content h1 {
     text-align: center;
-    margin-bottom: 30px ;
-}
+    font-weight: bold;
+  }
 
-.project-form form label {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.project-form form select, textarea {
+  .container .form-content .input-form-name input{
     width: 100%;
     font-size: 20px;
     font-weight: 400;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 20px;
-    background: #f4f3f3;
-    border: 1px solid #c4c4c4;
-    border-radius: 8px;
-}
+  }
 
-.project-form form .input-project-name input{
-    width: 100%;
-    font-size: 20px;
+  .container .form-content label {
     font-weight: 400;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background: #f4f3f3;
-    border: 1px solid #c4c4c4;
-    border-radius: 8px;
-}
-.project-form form .project-date input{
-    width: 100%;
     font-size: 20px;
-    font-weight: 400;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background: #f4f3f3;
-    border: 1px solid #c4c4c4;
-    border-radius: 8px;
-}
-.project-form form .project-date {
-    display: flex ; 
-    justify-content: space-between;
-    width: 100% ;
-}
-
-.project-form form .project-date .date-start {
+  }
+  
+  form h3 {
+    font-size: 20px
+  }
+  
+  textarea {
+    border: none;
+    margin-top: 10px;
     width: 100%;
-    margin-right: 30px;
-}
+    height: 45px;
+    resize: none;
+    height: 200px;
+    font-size: 18px;
+  }
 
-.project-form form .project-date .date-end {
+  .project-date {
     width: 100%;
-    margin-left: 0px;
-}
-
-.project-form .project-duration input{
-    width: 100%;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background: #f4f3f3;
-    border: 1px solid #c4c4c4;
-    border-radius: 8px;
-}
-
-.nametag{
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-.input-project-technology {
     display: flex;
-}
+  }
+  .project-date .input-form-right {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .project-date .input-form-left {
+    width: 100%;
+  }
+  .project-date input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+  }
+  
+  .input-project-technology {
+    display: flex;  
+    }
 
-.input-project-technology .tech-left {
+    .input-project-technology .left-checkbox {
     display: flex; 
     flex-direction: column;
     margin-right: 80px;
-} 
+    } 
 
-.input-project-technology .tech-right {
+    .input-project-technology .right-checkbox {
     display: flex; 
     flex-direction: column ;
     margin-left:100px;
-}
+    }
 
-.input-project-technology .checkbox {
+    .input-project-technology .checkbox {
     margin-right: 10px;
-} 
+    } 
 
-.input-project-technology label {
+    .input-project-technology label {
     display: flex;
     align-items: center;
     margin-bottom:20px;
-}
+    }
 
-
-
-.project-form form .input-project-image-group{
-    background-color: white;
-    border-radius: 12px;
-    height: 50px;
-}
   
-.project-form form .input-project-image-group label {
+  /* Upload Image */
+  form .input-blog-image-group {
+    width: 100%;
+    height:50px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-color {
+    background-color: #e4e4e4;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  form .input-blog-image-group label p {
+    font-size: 25px;
+    margin-top: 1lvh;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 19px;
+    margin-bottom: 7%;
+    color: #b2abab;
+  }
+  
+  form .input-blog-image-group label img {
+    margin-bottom: 12px;
+  }
+  
+  form .input-blog-image-group label {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.project-form form .input-project-image-group label p {
-    font-size: 15px;
-    padding-left: 20px;
-}
-
-.project-form form .input-project-image-group img {
-    width: 20px;
-    height: 20px;
-    padding-right: 20px;
-}
-
-.button-submit button{
-    float: right;
+    padding: 8px;
+  }
+  
+  /* button */
+  
+  form .submit-data {
+    display: flex;
+    justify-content: end;
+  }
+  form .submit-data button {
     background-color: black;
     color: white;
-    border-radius: 100px;
-    margin-top: 20px;
-    padding: 5px 20px;
-}
-
-.project-list { 
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  form .submit-data button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* content card */
+  .content {
+    background-color: #f8f8f8;
+  }
+  
+  .row-project {
+    border-radius: 8px;
+  }
+  
+  .tampung-col {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
     justify-content: left;
     margin: 0px 54px;
-}
-
-.project-list .project-list-item {
-    width: 30%;
-    padding: 15px;
-    margin: 20px;
-    border: 2px solid #dbdbdb;
+  }
+  
+  .row-project .col-project {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px grey;
+    width: 350px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .row-project .col-project .img-control {
+    margin-top: 18px;
+    width: 320px;
+    max-height: 233px;
+    overflow: hidden;
+  }
+  
+  .row-project .col-project img {
     border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 0 15px #cecece;
-    
-}
-
-.project-list .project-list-item .project-image img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.project-list .project-list-item a {
-    font-size: 25px;
-}
-
-.project-list .project-list-item a:hover{
-    color: purple;
-}
-
-.project-list .project-list-item p{
-    text-align: justify;
-}
-
-.project-list .project-list-item .tag-tech {
-    font-size: 1.5rem;
-}
-
-.button {
-    float: right;
-}
-
-.button .button-edit, .button-delete {
+  }
+  
+  .row-project .col-project i {
+    margin-right: 22px;
+  }
+  
+  .row-project .col-project .button {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .row-project .col-project .button button {
     background-color: black;
+    border-radius: 8px;
     color: white;
-    border-radius: 100px;
-    padding: 3px 10px;
-} 
+    cursor: pointer;
+  }
+  
+  .row-project .col-project .button button:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .content .container .text-center h1 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+  .row-project .col-project .description {
+    max-height: 200px;
+    overflow: scroll;
+    color: black !important;
+  }
+  
+  .button .button-edit {
+    width: 50%;
+    font-size: 15px;
+  }
+  .button .button-delete {
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .container i {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
