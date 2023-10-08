@@ -19,17 +19,31 @@
   </head>
   <body>
     <nav>
-      <div class="navbar-left">
-        <ul>
-          <li><img src="./assets/images/logo.png" alt="logo" /></li>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="#" class="active"> My Project </a></li>
-        </ul>
+      <div class="nav-left">
+          <ul>
+              <li> <img src="./assets/images/logo.png" alt="logo"> </li>
+              <li class="item-collapse"> <a href="index.html">Home</a> </li>
+              <li class="item-collapse"> <a class="active" href="./project.html">My Project</a> </li>
+              <li class="item-collapse"> <a href="./testimonial.html">Testimonial</a></li>
+          </ul>
       </div>
-      <div class="navbar-right">
-        <a href="contact.html"> Contact Me </a>
+      <div class="nav-right item-collapse">
+          <a href="./contact.html">Contact Me</a>
       </div>
-    </nav>
+      <div class="nav-right" id="bars-menu">
+          <button style="background-color: transparent; border: none; cursor: pointer;"
+              onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+      </div>
+  </nav>
+
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="./index.html" >Home</a>
+      <a href="./project.html"class="hamburger-active">My Project</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="./contact.html"><p class="contact-me">Contact Me</p></a>
+  </div>
 
     <div class="container">
       <div class="form-content">
@@ -102,7 +116,7 @@
         </div>
         <div class="row-project">
           <div class="tampung-col" id="content">
-            <div class="col-project test1">
+            <div class="col-project">
               <div class="container">
                 <a href="./project-detail.html">
                   <div class="img-control">
@@ -142,5 +156,6 @@
     </div>
         
     <script src="./script/project.js"></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>

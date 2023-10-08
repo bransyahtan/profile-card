@@ -19,70 +19,93 @@
 
   <body>
     <nav>
-      <div class="navbar-left">
+      <div class="nav-left">
         <ul>
           <li><img src="./assets/images/logo.png" alt="logo" /></li>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="./project.html" class="active"> My Project </a></li>
+          <li class="item-collapse"><a href="index.html">Home</a></li>
+          <li class="item-collapse">
+            <a class="active" href="./project.html">My Project</a>
+          </li>
+          <li class="item-collapse">
+            <a href="./testimonial.html">Testimonial</a>
+          </li>
         </ul>
       </div>
-      <div class="navbar-right">
-        <a href="contact.html"> Contact Me </a>
+      <div class="nav-right item-collapse">
+        <a href="./contact.html">Contact Me</a>
+      </div>
+      <div class="nav-right" id="bars-menu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
 
-    <div class="project-container">
-      <div class="project-title">
-        <h1>E-Learning Web</h1>
-      </div>
-
-      <div class="project-detail">
-        <div class="project-image">
-          <img src="./assets/images/techno.jpg" alt="Deus Ex Machina">
-        </div>
-        <div class="project-detail-info">
-          <div class="duration">
-            <h3>Duration</h3>
-              <div class="project-duration">
-                <p>1 Tahun 11 Bulan</p>
-              </div>
-          </div>
-            <h3>Technologies</h3>
-          <div class="technology">
-            <div class="left-tech">
-              <div class="tech1">
-                <i class="fa-brands fa-android"></i>
-              </div>
-              <div class="tech2">
-                <i class="fa-brands fab fa-react"></i></i> 
-              </div>
-            </div>
-            
-            <div class="right-tech">
-              <div class="tech3">
-                <i class="fa-solid fa-network-wired"></i>
-              </div>
-              <div class="tech4">
-                <i class="fa-solid fa-microchip"></i>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="project-description">
-        <p>Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
-          pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama
-          15 tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah
-          mesin yang dapat meniru kemampuan otak manusia dalam memproses
-          informasi dan pengambilan keputusan. Mesin ini diharapkan dapat
-          digunakan untuk mempercepat penemuan dan inovasi yang akan membantu
-          memecahkan berbagai masalah kompleks di dunia. Meskipun masih dalam
-          tahap prototipe, Deus Ex Machina menjadi tonggak penting bagi
-          perkembangan teknologi di masa depan.</p>
-        </div>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="./index.html" >Home</a>
+      <a href="./project.html" class="hamburger-active">My Project</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="./contact.html"><p class="contact-me">Contact Me</p></a>
     </div>
-    
+
+    <div class="main">
+      <h1>Deus Ex Machina</h1>
+      <div class="container flex">
+        <div class="content-images">
+          <img src="./assets/images/techno.jpg" alt="" />
+        </div>
+        <div class="content-date-tech">
+          <h2>Duration</h2>
+          <div class="date-tech">
+            <i class="fas fa-calendar-alt fa-xl"></i>
+            <p>08 Feb 1999 - 08 Feb 2024</p>
+          </div>
+          <div class="date-tech">
+            <i class="far fa-clock fa-xl"></i>
+            <p>25 Years</p>
+          </div>
+          <h2>Technologies</h2>
+          <div class="technologies">
+            <div class="tecnologies-left">
+              <div class="date-tech">
+                <i class="fa-brands fa-android"></i>
+                <p>Android</p>
+              </div>
+              <div class="date-tech">
+                <i class="fa-brands fab fa-react"></i>
+                <p>React JS</p>
+              </div>
+            </div>
+            <div class="tecnologies-right">
+              <div class="date-tech">
+                <i class="fa-solid fa-network-wired"></i>
+                <p>Wired Network</p>
+              </div>
+              <div class="date-tech">
+                <i class="fa-solid fa-microchip"></i>
+                <p>Microchip</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="content-description">
+          Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
+          pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama 15
+          tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah mesin
+          yang dapat meniru kemampuan otak manusia dalam memproses informasi dan
+          pengambilan keputusan. Mesin ini diharapkan dapat digunakan untuk
+          mempercepat penemuan dan inovasi yang akan membantu memecahkan
+          berbagai masalah kompleks di dunia. Meskipun masih dalam tahap
+          prototipe, Deus Ex Machina menjadi tonggak penting bagi perkembangan
+          teknologi di masa depan.
+        </p>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
   </body>
 </html>
