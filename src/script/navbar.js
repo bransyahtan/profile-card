@@ -11,4 +11,3 @@ const openHamburger = () => {
         isHamburgerOpen = true;
     }
 }
-

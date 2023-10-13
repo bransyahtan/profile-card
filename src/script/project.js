@@ -103,10 +103,4 @@ function renderBlog() {
       </div>
     </div>`;
   });
-
-  let toLink = document.getElementById("make-link-to");
-
-  toLink.addEventListener("click", function () {
-    window.location.href = "detail-blog.html";
-  });
 }
