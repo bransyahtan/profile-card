@@ -1,6 +1,6 @@
 const testimonial = new Promise((resolve, reject) => {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.npoint.io/84096740cdd9ba5c0784", true);
+  xhr.open("GET", "/src/script/testimonial.json", true);
   xhr.onload = function () {
     if (xhr.status == 200) {
       resolve(JSON.parse(xhr.response));
@@ -23,17 +23,23 @@ async function allTestimonial() {
 
     response.forEach((item) => {
       testimonialForHtml += `
-      <div class="card-testi">
-      <img class="profile-testimonial" src="${item.image}"
-      alt="profile">
-      <div class="quote">
-          <p>${item.quote}</p>
-      </div>
-      <div class="name-rating">
-      <p class="name">${item.author}</p>
-      <p class="star">${item.rating} <i class="fa-solid fa-star"></i></p>
-      </div>
-      </div> 
+       <div class="col-md-3 mb-4">
+            <div class="card shadow" style="width: 23rem">
+              <img
+                src="${item.image}"
+                class="card-img-top"
+                alt="Profile"
+              />
+              <div class="card-body">
+                <div class="quote"></div>
+                <p style="text-align: justify">${item.quote}</p>
+                <div class="name-rating">
+                  <p class="name text-end fw-bold">${item.author}</p>
+                  <p class="star  text-end fw-bold">${item.rating}<i class="fa-solid fa-star"> </i></p>
+                </div>
+              </div>
+            </div>
+          </div>
       `;
     });
 
@@ -55,17 +61,23 @@ async function filterTestimonial(rating) {
     } else {
       dataFiltered.forEach((item) => {
         testimonialForHtml += `
-        <div class="card-testi">
-        <img class="profile-testimonial" src="${item.image}"
-        alt="profile">
-        <div class="quote">
-            <p>${item.quote}</p>
-        </div>
-        <div class="name-rating">
-        <p class="name">${item.author}</p>
-        <p class="star">${item.rating} <i class="fa-solid fa-star"></i></p>
-        </div>
-    </div> 
+        <div class="col-md-3 mb-4">
+            <div class="card shadow" style="width: 23rem">
+              <img
+                src="${item.image}"
+                class="card-img-top"
+                alt="Profile"
+              />
+              <div class="card-body">
+                <div class="quote"></div>
+                <p style="text-align: justify">${item.quote}</p>
+                <div class="name-rating">
+                  <p class="name text-end fw-bold">${item.author}</p>
+                  <p class="star  text-end fw-bold">${item.rating}<i class="fa-solid fa-star"> </i></p>
+                </div>
+              </div>
+            </div>
+          </div>
         `;
       });
     }

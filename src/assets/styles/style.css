@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: black;
 }
 
 body {
@@ -12,235 +10,27 @@ body {
     background-color: rgb(226, 230, 234);
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    background-color: #f7f7f7ec
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 30px;
-    font-size: 20px;
-}
-
-nav ul li a:hover {
-    color: white;
-    background-color: black;
-    border-radius: 100px;
-    padding: 8px 12px;
-}
-
-.nav-left {
-    flex: 50%;
-}
-
-.nav-right {
-    flex: 50%;
-    text-align: end;
-    margin-right: 60px;
-}
-
-.nav-right a {
-    background-color: black;
-    color: white;
-    padding: 8px 22px;
-    border-radius: 20px;
-}
-
-.nav-right a:hover {
-    background-color: grey;
-    color: black;
-    padding: 8px 22px;
-    border-radius: 20px;
-}
-
-.active {
-    font-weight: bold;
-}
-
-#bars-menu {
-    display: none;
-}
-
-.hamburger-nav-container {
-    font-size: 20px;
-    list-style-type: none;
-    display: none;
-}
-
-.hamburger-nav-container a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: none;
-}
-
-.hamburger-nav-container a:hover {
-    color: black;
-    font-weight: bold;
-}
-
-.hamburger-nav-container .hamburger-active {
-    font-weight: bold;
-}
-
-.hamburger-nav-container .contact-me {
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin: 0;
-    font-size: 18px;
-}
-
-.hamburger-nav-container .contact-me:hover {
-    background-color: grey;
-    color: black;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin: 0;
-    font-size: 18px;
-}
-
-
-.main-container {
-    background-color: hsl(210 17% 91%);
-}
-
-.card-container {
-    margin-top: 40px;
-    background-color: hsl(0 0% 100%);
-    width: 50%;
-    margin-inline: auto;
-    display: flex;
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px hsl(0 0% 0% / 20%);
-}
-
-.card-left {
-    flex: 60%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 20px;
-}
-
-.card-desc {
-    font-size: 15px;
-    text-align: justify;
-}
-
-.card-button {
-    display: flex;
-    gap: 1rem;
-}
-
-.card-button .contact-button {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border-radius: 100px;
-    padding: 8px 12px;
-}
-
-.card-button .download-button {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border-radius: 100px;
-    padding: 8px 12px;
-}
-
-.card-button .download-button i {
-    color: white;
-}
-
-.social-media {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.social-media i {
-    cursor: pointer;
-    font-size: 2rem;
-}
-
-.card-right {
-    flex: 40%;
-}
-
-.profile {
-    box-shadow: 0 0 20px hsl(0 0% 0% / 30%);
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-.photo-profile {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.detail-profile {
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.detail-profile h1 {
-    font-size: 1.3rem;
-}
-
-.detail-profile p {
+a.nav-link {
     font-size: 1.2rem;
+} 
+
+a.nav-link:hover{
+    color:black;
+    font-weight: bold;
 }
 
-@media only screen and (max-width: 700px) {
-    .item-collapse {
-        display: none;
-    }
-    #bars-menu {
-        display: block;
-    }
+a.btn.btn-dark:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
 }
 
-/* @media only screen and (min-width: 1000px) {
-    .hamburger-nav-container {
-        display: none;
-    }
-} */
-
-@media only screen and (max-width: 900px) {
-    .card-container {
-        flex-direction: column;
-    }
-
-    .social-media {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .profile {
-        width: 50%;
-        margin-inline: auto;
-    }
+.btn-hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .profile {
-        width: 90%;
-    }
+.navbar-collapse {
+    text-align: center;
 }

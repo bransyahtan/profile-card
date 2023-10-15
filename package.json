@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^4.18.2",
+    "handlebars": "^4.7.8",
     "hbs": "^4.2.0",
     "nodemon": "^3.0.1"
   },
@@ -9,7 +10,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":  "nodemon apa.js",
+    "start": "nodemon apa.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

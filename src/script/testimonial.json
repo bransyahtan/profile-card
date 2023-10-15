@@ -1,0 +1,44 @@
+[
+    {
+        "image": "/src/assets/images/profilPhoto.jpg",
+        "quote": "Terima kasih kepada tim pengembang aplikasi ini! Antarmuka yang intuitif, kinerja cepat, dan fitur yang luar biasa membuat hidup saya lebih mudah",
+        "author": "Sultan Bransyah",
+        "rating": 5
+    },
+    {
+        "image": "/src/assets/images/cat1.jpg",
+        "quote": "Aplikasi ini sangat buruk, penuh dengan bug, sulit digunakan, dan membuat pengalaman pengguna sangat frustasi. Saya kecewa total.",
+        "author": "Kucing Kuning",
+        "rating": 1
+    },
+    {
+        "image": "/src/assets/images/cat2.jpg",
+        "quote": "Terima kasih kepada tim pengembang aplikasi ini! Antarmuka yang intuitif, kinerja cepat, dan fitur yang luar biasa membuat hidup saya lebih mudah",
+        "author": "Kucing Abu",
+        "rating": 4
+    },
+    {
+        "image": "/src/assets/images/cat3.jpg",
+        "quote": "Aplikasi ini sangat buruk, penuh dengan bug, sulit digunakan, \n    dan membuat pengalaman pengguna sangat frustasi. Saya kecewa total.",
+        "author": "Kucing Kecil",
+        "rating": 2
+    },
+    {
+        "image": "/src/assets/images/cat4.jpg",
+        "quote": "Aplikasi ini sangat buruk, penuh dengan bug, sulit digunakan, dan membuat pengalaman pengguna sangat frustasi. Saya kecewa total.",
+        "author": "Kucing Teriak",
+        "rating": 2
+    },
+    {
+        "image": "/src/assets/images/cat5.jpg",
+        "quote": "Terima kasih kepada tim pengembang aplikasi ini! Antarmuka yang intuitif, kinerja cepat, dan fitur yang luar biasa membuat hidup saya lebih mudah",
+        "author": "Kucing Jilat",
+        "rating": 3
+    },
+    {
+        "image": "/src/assets/images/cat6.jpg",
+        "quote": "Terima kasih kepada tim pengembang aplikasi ini! Antarmuka yang intuitif, kinerja cepat, dan fitur yang luar biasa membuat hidup saya lebih mudah",
+        "author": "Kucing Menatap Masa Depan",
+        "rating": 4
+    }
+]

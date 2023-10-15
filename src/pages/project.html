@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>My Project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add Project</title>
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="/src/assets/styles/project.css"
+      href="/src/assets/styles/style.css"
     />
     <link
       rel="stylesheet"
@@ -16,200 +18,213 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    /> -->
+    />
   </head>
   <body>
-    <nav>
-      <div class="nav-left">
-        <ul>
-          <li><img src="/src/assets/images/logo.png" alt="logo" /></li>
-          <li class="item-collapse"><a href="index.html">Home</a></li>
-          <li class="item-collapse">
-            <a class="active" href="./project.html">My Project</a>
-          </li>
-          <li class="item-collapse">
-            <a href="./testimonial.html">Testimonial</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-right item-collapse">
-        <a href="./contact.html">Contact Me</a>
-      </div>
-      <div class="nav-right" id="bars-menu">
+    <nav class="navbar navbar-expand-lg bg-dark-subtle sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-5 ms-5" href="./index.html">
+          <img src="/src/assets/images/logo.png" alt="Logo" />
+        </a>
         <button
-          style="background-color: transparent; border: none; cursor: pointer"
-          onclick="openHamburger()"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
         >
-          <i class="fa-2x fa-solid fa-bars"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 fw-bold" href="./project.html"
+                >Add Project</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./testimonial.html">Testimonial</a>
+            </li>
+          </ul>
+          <a class="btn btn-dark me-4" href="./contact.html">Contact Me</a>
+        </div>
       </div>
     </nav>
-
-    <div class="hamburger-nav-container" id="hamburger-nav-container">
-      <a href="./index.html">Home</a>
-      <a href="./project.html" class="hamburger-active">My Project</a>
-      <a href="testimonial.html">Testimonial</a>
-      <a href="./contact.html"><p class="contact-me">Contact Me</p></a>
-    </div>
-
-    <div class="container">
-      <div class="form-content">
-        <form action="" onsubmit="addProject(event)">
-          <h1>Add Project</h1>
-          <div class="input-form-name">
-            <label for="input-project-name">Project Name</label>
-            <input
-              type="text"
-              id="input-project-name"
-              placeholder="Your Project Name"
-            />
-          </div>
-          <div class="project-date">
-            <div class="input-form-left">
-              <label for="input-start-date">Start Date</label>
-              <input type="date" id="input-start-date" />
-            </div>
-            <div class="input-form-right">
-              <label for="input-end-date">End Date</label>
-              <input type="date" id="input-end-date" />
-            </div>
-          </div>
-          <div class="input-form-description">
-            <label for="input-description">Description</label>
-            <textarea
-              id="input-description"
-              rows="5"
-              cols="50"
-              placeholder="Your Project Description"
-            ></textarea>
-          </div>
-          <h3 for="input-project-technology">Technology</h3>
-
-          <div class="input-project-technology">
-            <div class="left-checkbox">
-              <label for="">
+    <!-- end navbar -->
+    <div class="bg-body-secondary overflow-hidden">
+      <div class="container my-5">
+        <h1 class="text-center mt-3">Add Your Project</h1>
+        <div class="d-flex justify-content-center">
+          <form class="w-75">
+            <div class="mb-3">
+              <div class="mb-3">
+                <label for="input-project-name" class="form-label fw-bold"
+                  >Project Name</label
+                >
                 <input
-                  type="checkbox"
-                  value="android"
-                  id="android-checkbox"
-                  class="checkbox"
+                  type="text"
+                  class="form-control"
+                  id="input-project-name"
+                  placeholder="Enter Your Project Name"
                 />
-                Android</label
-              >
-              <label for="">
-                <input
-                  type="checkbox"
-                  value="react JS"
-                  id="react-checkbox"
-                  class="checkbox"
-                />
-                React JS</label
-              >
-            </div>
-            <div class="right-checkbox">
-              <label for="">
-                <input
-                  type="checkbox"
-                  value="wired"
-                  id="wired-checkbox"
-                  class="checkbox"
-                />
-                Wired Network</label
-              >
-              <label for="">
-                <input
-                  type="checkbox"
-                  value="microchip"
-                  id="microchip-checkbox"
-                  class="checkbox"
-                />
-                Microchip</label
-              >
-            </div>
-          </div>
-
-          <div class="input-form-image">
-            <label for="upload-image">Upload Image</label>
-            <div class="input-blog-image-group">
-              <label for="input-blog-image">
-                <div class="btn-color">
-                  <p>choose</p>
-                </div>
-                <img src="/src/assets/images/file.png" />
-              </label>
-              <input type="file" id="input-blog-image" hidden />
-            </div>
-          </div>
-          <div class="submit-data">
-            <button type="submit">submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="content">
-      <div class="container">
-        <div class="text-center">
-          <h1>My Project</h1>
-        </div>
-        <div class="row-project">
-          <div class="tampung-col" id="content">
-            <div class="col-project">
-              <div class="container">
-                <a href="./project-detail.html">
-                  <div class="img-control">
-                    <img
-                      src="/src/assets/images/techno.jpg"
-                      alt="Deus Ex Machina"
+              </div>
+              <!-- date -->
+              <div class="d-flex">
+                <div class="flex-grow-1 me-2">
+                  <div class="mb-3">
+                    <label for="input-project-start" class="form-label fw-bold"
+                      >Start Date</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="input-project-start"
+                      name="input-project-start"
                     />
                   </div>
-
-                  <h4 style="color: black">Deus Ex Machina</h4>
-                  <p style="font-style: normal; color: #868686">
-                    durasi : 1 Tahun 11 Bulan
-                  </p>
-                  <p class="description" style="text-align: justify">
-                    Deus Ex Machina adalah sebuah prototipe yang dibuat dalam
-                    project pembuatan mesin otak manusia. Proyek ini
-                    menghabiskan waktu selama 15 tahun 2 bulan dan memiliki
-                    tujuan untuk mengembangkan sebuah mesin yang dapat meniru
-                    kemampuan otak manusia dalam memproses informasi dan
-                    pengambilan keputusan. Mesin ini diharapkan dapat digunakan
-                    untuk mempercepat penemuan dan inovasi yang akan membantu
-                    memecahkan berbagai masalah kompleks di dunia. Meskipun
-                    masih dalam tahap prototipe, Deus Ex Machina menjadi tonggak
-                    penting bagi perkembangan teknologi di masa depan.
-                  </p>
-                </a>
-                <i class="fa-brands fa-android"></i>
-                <i class="fa-brands fab fa-react"></i>
-                <i class="fa-solid fa-network-wired"></i>
-                <i class="fa-solid fa-microchip"></i>
-
-                <div class="button">
-                  <button class="button-edit">Edit</button>
-                  <button class="button-delete">Delete</button>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <div class="mb-3">
+                    <label for="input-project-end" class="form-label fw-bold"
+                      >End Date</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="input-project-end"
+                      name="input-project-end"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- end date -->
+              <div class="mb-3">
+                <label
+                  for="input-project-description"
+                  class="form-label fw-bold"
+                  >Project Description</label
+                >
+                <textarea
+                  class="form-control"
+                  id="input-project-description"
+                  rows="5"
+                  cols="50"
+                  style="resize: none"
+                  placeholder="Your Project Description"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="input-number" class="form-label fw-bold"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="input-number"
+                  placeholder="Enter Your Number"
+                />
+              </div>
+              <!-- checkbox -->
+              <p class="fw-bold" for="input-project-technology">Technology</p>
+              <div class="row mb-3 input-project-technology">
+                <div class="col-6 tech-left">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="android"
+                      id="android-checkbox"
+                    />
+                    <label class="form-check-label" for="android-checkbox">
+                      Android
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="react JS"
+                      id="react-checkbox"
+                    />
+                    <label class="form-check-label" for="react-checkbox">
+                      React JS
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6 tech-right">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="wired"
+                      id="wired-checkbox"
+                    />
+                    <label class="form-check-label" for="wired-checkbox">
+                      Wired Network
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="microchip"
+                      id="microchip-checkbox"
+                    />
+                    <label class="form-check-label" for="microchip-checkbox">
+                      Microchip
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- end checkbox -->
+              <div class="mb-3">
+                <label for="input-project-image" class="form-label fw-bold"
+                  >Upload Image</label
+                >
+                <div class="input-group">
+                  <label
+                    for="input-project-image"
+                    class="input-group-text btn btn-dark"
+                  >
+                    Choose File
+                  </label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="input-project-image"
+                    style="display: none"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="No file chosen"
+                    readonly
+                  />
                 </div>
               </div>
             </div>
-          </div>
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-dark btn-hover">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
-    <script src="/src/script/project.js"></script>
-    <script src="/src/script/navbar.js"></script>
-    <!-- <script
+    <!-- script-->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
   </body>
 </html>

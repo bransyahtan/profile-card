@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: black;
 }
 
 body {
@@ -12,209 +10,27 @@ body {
     background-color: rgb(226, 230, 234);
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    background-color: #f7f7f7ec
-}
+a.nav-link {
+    font-size: 1.2rem;
+} 
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 30px;
-    font-size: 20px;
-}
-
-nav ul li a:hover {
-    color: white;
-    background-color: black;
-    border-radius: 100px;
-    padding: 8px 12px;
-}
-
-.nav-left {
-    flex: 50%;
-}
-
-.nav-right {
-    flex: 50%;
-    text-align: end;
-    margin-right: 60px;
-}
-
-.nav-right a {
-    background-color: black;
-    color: white;
-    padding: 8px 22px;
-    border-radius: 20px;
-}
-
-.nav-right a:hover {
-    background-color: grey;
-    color: black;
-    padding: 8px 22px;
-    border-radius: 20px;
-}
-
-.active {
+a.nav-link:hover{
+    color:black;
     font-weight: bold;
 }
 
-#bars-menu {
-    display: none;
-}
-
-.hamburger-nav-container {
-    font-size: 20px;
-    list-style-type: none;
-    display: none;
-}
-
-.hamburger-nav-container a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: none;
-}
-
-.hamburger-nav-container a:hover {
-    color: black;
+a.btn.btn-dark:hover{
+    background-color: black;
+    color: white;
     font-weight: bold;
 }
 
-.hamburger-nav-container .hamburger-active {
+.btn-hover {
+    background-color: black;
+    color: white;
     font-weight: bold;
 }
 
-.hamburger-nav-container .contact-me {
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin: 0;
-    font-size: 18px;
+.navbar-collapse {
+    text-align: center;
 }
-
-.hamburger-nav-container .contact-me:hover {
-    background-color: grey;
-    color: black;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin: 0;
-    font-size: 18px;
-}
-@media only screen and (max-width: 800px) {
-    .item-collapse {
-        display: none;
-    }
-    #bars-menu {
-        display: block;
-    }
-    form {
-        width: 80%;
-    }
-}
-
-form {
-    width: 800px;
-    margin: 50px auto;
-    padding: 10px;
-}
-
-form div {
-    margin-top: 15px;
-}
-
-label {
-    font-weight:600;
-    font-size: 25px;
-}
-
-input, select, textarea {
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    margin-top: 0;
-    border-radius: 5px;
-    border: 1px solid #dbdbdb;
-    resize: none;
-    font-size: 25px;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: white;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='100' viewBox='0 0 24 24' width='75' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 50%;
-    padding: 13px;
-    appearance: none;
-  }
-
-input, textarea {
-    width: calc(100% - 21px);
-}
-
-.submit {
-    background-color: black;
-    color: white;
-    padding: 6px 32px;
-    border-radius: 25px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    float: right;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .item-collapse {
-        display: none;
-    }
-
-    #bars-menu {
-        display: block;
-    }
-
-    .nav-right {
-        margin-right: 20px;
-    }
-
-    form {
-        width: 90%;
-    }
-
-}
-
-
-button {
-    background-color: black;
-    color: white;
-    padding: 2px 20px;
-    border: none;
-    border-radius: 15px;
-    margin-top: 5px;
-    font-size: 15px;
-    cursor: pointer;
-    float: right;
-}
-
-button:hover {
-    background-color: grey;
-    color: black;
-}
-

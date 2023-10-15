@@ -1,13 +1,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Detail</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/src/assets/styles/projectDetail.css"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/assets/styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,108 +12,120 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    /> -->
+    />
   </head>
 
   <body>
-    <nav>
-      <div class="nav-left">
-        <ul>
-          <li><img src="/src/assets/images/logo.png" alt="logo" /></li>
-          <li class="item-collapse"><a href="index.html">Home</a></li>
-          <li class="item-collapse">
-            <a class="active" href="./project.html">My Project</a>
-          </li>
-          <li class="item-collapse">
-            <a href="./testimonial.html">Testimonial</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-right item-collapse">
-        <a href="./contact.html">Contact Me</a>
-      </div>
-      <div class="nav-right" id="bars-menu">
+    <nav class="navbar navbar-expand-lg bg-dark-subtle sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-5 ms-5" href="./index.html">
+          <img src="/src/assets/images/logo.png" alt="Logo" />
+        </a>
         <button
-          style="background-color: transparent; border: none; cursor: pointer"
-          onclick="openHamburger()"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
         >
-          <i class="fa-2x fa-solid fa-bars"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-4 fw-bold" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./project.html">Add Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./testimonial.html">Testimonial</a>
+            </li>
+          </ul>
+          <a class="btn btn-dark rounded-pill me-4" href="./contact.html"
+            >Contact Me</a
+          >
+        </div>
       </div>
     </nav>
+    <!-- end navbar -->
 
-    <div class="hamburger-nav-container" id="hamburger-nav-container">
-      <a href="./index.html">Home</a>
-      <a href="./project.html" class="hamburger-active">My Project</a>
-      <a href="testimonial.html">Testimonial</a>
-      <a href="./contact.html"><p class="contact-me">Contact Me</p></a>
-    </div>
-
-    <div class="main">
-      <h1>Deus Ex Machina</h1>
-      <div class="container flex">
-        <div class="content-images">
-          <img src="/src/assets/images/techno.jpg" alt="" />
+    <div class="container">
+      <h1 class="text-center my-4">Deus Ex Machina</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="/src/assets/images/techno.jpg"
+            alt="Deus Ex Machina"
+            class="img-fluid"
+          />
         </div>
-        <div class="content-date-tech">
+        <div class="col-md-6">
           <h2>Duration</h2>
-          <div class="date-tech">
-            <i class="fas fa-calendar-alt fa-xl"></i>
-            <p>08 Feb 1999 - 08 Feb 2024</p>
-          </div>
-          <div class="date-tech">
-            <i class="far fa-clock fa-xl"></i>
-            <p>25 Years</p>
-          </div>
-          <h2>Technologies</h2>
-          <div class="technologies">
-            <div class="tecnologies-left">
-              <div class="date-tech">
-                <i class="fa-brands fa-android"></i>
-                <p>Android</p>
+          <div class="row">
+            <div class="col-6">
+              <div class="date-tech my-4 d-flex align-items-center">
+                <i class="fas fa-calendar-alt fa-xl me-2"></i>
+                <p class="m-0">08 Feb 1999 - 08 Feb 2024</p>
               </div>
-              <div class="date-tech">
-                <i class="fa-brands fab fa-react"></i>
-                <p>React JS</p>
+              <div class="date-tech mb-4 d-flex align-items-center">
+                <i class="far fa-clock fa-xl me-2"></i>
+                <p class="m-0">25 Years</p>
               </div>
             </div>
-            <div class="tecnologies-right">
-              <div class="date-tech">
-                <i class="fa-solid fa-network-wired"></i>
-                <p>Wired Network</p>
+          </div>
+
+          <h2>Technologies</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="date-tech d-flex fs-5">
+                <i class="fa-brands fa-android fs-4"></i>
+                <p class="ms-2">Android</p>
               </div>
-              <div class="date-tech">
-                <i class="fa-solid fa-microchip"></i>
-                <p>Microchip</p>
+              <div class="date-tech d-flex fs-5">
+                <i class="fa-brands fab fa-react fs-4"></i>
+                <p class="ms-2">React JS</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="date-tech d-flex fs-5">
+                <i class="fa-solid fa-network-wired fs-4"></i>
+                <p class="ms-2">Wired Network</p>
+              </div>
+              <div class="date-tech d-flex fs-5">
+                <i class="fa-solid fa-microchip fs-4"></i>
+                <p class="ms-2">Microchip</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <p class="content-description">
-          Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
-          pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama 15
-          tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah mesin
-          yang dapat meniru kemampuan otak manusia dalam memproses informasi dan
-          pengambilan keputusan. Mesin ini diharapkan dapat digunakan untuk
-          mempercepat penemuan dan inovasi yang akan membantu memecahkan
-          berbagai masalah kompleks di dunia. Meskipun masih dalam tahap
-          prototipe, Deus Ex Machina menjadi tonggak penting bagi perkembangan
-          teknologi di masa depan.
-        </p>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <p class="content-description" style="text-align: justify">
+            Deus Ex Machina adalah sebuah prototipe yang dibuat dalam project
+            pembuatan mesin otak manusia. Proyek ini menghabiskan waktu selama
+            15 tahun 2 bulan dan memiliki tujuan untuk mengembangkan sebuah
+            mesin yang dapat meniru kemampuan otak manusia dalam memproses
+            informasi dan pengambilan keputusan. Mesin ini diharapkan dapat
+            digunakan untuk mempercepat penemuan dan inovasi yang akan membantu
+            memecahkan berbagai masalah kompleks di dunia. Meskipun masih dalam
+            tahap prototipe, Deus Ex Machina menjadi tonggak penting bagi
+            perkembangan teknologi di masa depan.
+          </p>
+        </div>
       </div>
     </div>
-    <script src="/src/script/navbar.js"></script>
-    <!-- <script
+
+    <!-- <script src="/src/script/navbar.js"></script> -->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
   </body>
 </html>
