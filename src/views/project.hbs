@@ -9,7 +9,7 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="/src/assets/styles/style.css"
+      href="/styles/style.css"
     />
     <link
       rel="stylesheet"
@@ -28,8 +28,8 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-dark-subtle sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand me-5 ms-5" href="./index.html">
-          <img src="/src/assets/images/logo.png" alt="Logo" />
+        <a class="navbar-brand me-5 ms-5" href="/index">
+          <img src="/images/logo.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -42,18 +42,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link me-4" href="./index.html">Home</a>
+              <a class="nav-link me-4" href="/index">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-4 fw-bold" href="./project.html"
+              <a class="nav-link me-4 fw-bold" href="/project"
                 >Add Project</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link me-4" href="./testimonial.html">Testimonial</a>
+              <a class="nav-link me-4" href="/testimonial">Testimonial</a>
             </li>
           </ul>
-          <a class="btn btn-dark me-4" href="./contact.html">Contact Me</a>
+          <a class="btn btn-dark me-4" href="/contact">Contact Me</a>
         </div>
       </div>
     </nav>
@@ -73,6 +73,7 @@
                   class="form-control"
                   id="input-project-name"
                   placeholder="Enter Your Project Name"
+                  name="input_project_name"
                 />
               </div>
               <!-- date -->
@@ -86,7 +87,7 @@
                       type="date"
                       class="form-control"
                       id="input-project-start"
-                      name="input-project-start"
+                      name="input_project_start"
                     />
                   </div>
                 </div>
@@ -99,7 +100,7 @@
                       type="date"
                       class="form-control"
                       id="input-project-end"
-                      name="input-project-end"
+                      name="input_project_end"
                     />
                   </div>
                 </div>
@@ -118,18 +119,8 @@
                   cols="50"
                   style="resize: none"
                   placeholder="Your Project Description"
+                  name="project_description"
                 ></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="input-number" class="form-label fw-bold"
-                  >Phone Number</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="input-number"
-                  placeholder="Enter Your Number"
-                />
               </div>
               <!-- checkbox -->
               <p class="fw-bold" for="input-project-technology">Technology</p>
