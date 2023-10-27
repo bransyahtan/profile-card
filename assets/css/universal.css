@@ -1,0 +1,16 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.bg-nav-color {
+  background-color: #f4f3f3;
+}
+
+.hover-white:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.active {
+  font-weight: bold;
+}
