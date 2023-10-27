@@ -26,3 +26,8 @@ const routes = require("./routes");
 app.use(routes);
 
 app.listen(PORT, () => console.log(`Listening http://localhost:${PORT}`));
+
+// cara end port
+// cmd
+// netstat -ano | findstr "PortNumber"
+// taskkill /PID "ProcessID" /F
